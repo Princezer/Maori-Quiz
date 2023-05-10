@@ -93,7 +93,7 @@ if question_8 == "whero":
 question_9 = input("Question 9\n"
                    "what does Pipiri mean\n"
                    ">").lower()
-if question_9 == "june":
+if question_9 == "green":
     Score = Score+1
 
 question_10 = input("Question 10\n"
@@ -135,10 +135,19 @@ if Score >= 1:
     if question_8 == "whero":
         print("Q8 correct")
 
-    if question_9 == "june":
+    if question_9 == "green":
         print("Q9 correct")
 
     if question_10 == "a":
         print("Q10 correct")
 
-print (Score)
+print (f"you got a Score of {Score}/10")
+
+if Score <5:
+    print ("bro, you gotta work on your stuff.")
+elif Score ==5:
+    print("congrats, you are exactly average")
+elif Score >=10:
+    print ("nice, not entirely useless")
+else:
+    print ("wow, you can use a serch bar, good one, you almost got away with it too.")

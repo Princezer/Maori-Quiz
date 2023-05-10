@@ -93,7 +93,7 @@ if question_8 == "whero":
 question_9 = input("Question 9\n"
                    "what does Pipiri mean\n"
                    ">").lower()
-if question_9 == "june":
+if question_9 == "green":
     Score = Score+1
 
 question_10 = input("Question 10\n"
@@ -135,7 +135,7 @@ if Score >= 1:
     if question_8 == "whero":
         print("Q8 correct")
 
-    if question_9 == "june":
+    if question_9 == "green":
         print("Q9 correct")
 
     if question_10 == "a":
