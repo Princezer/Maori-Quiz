@@ -143,6 +143,7 @@ if Score >= 1:
 
 print (f"you got a Score of {Score}/10")
 
+print(f"you got a score of {Score}/10")
 if Score <5:
     print ("bro, you gotta work on your stuff.")
 elif Score ==5:
