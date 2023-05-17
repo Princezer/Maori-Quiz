@@ -1,15 +1,16 @@
 Score = 0
 play_again = "yes"
 
-# main script
+# main script; this is all the things that a player interacts with
 
-# Welcome
+
+# Welcome; this is the start of the main script, it welcomes players to the game
 
 Rules = input("Welcome To the Te Reo Maori Quiz\n"
               "would you like the rules?:").lower()
 if Rules == "y" or Rules == "yes":
 
-    # rules
+    # rules; this is where players can have the choice to see the rules or not. if they do not it starts game right away
 
     print("x"*40)
     the_rules = input("These are the rules.\n"
@@ -27,11 +28,11 @@ if Rules == "y" or Rules == "yes":
 
     print("x"*40)
 
-# play again
+# play again; the following code repeats for as long as the player wants to keep playing.
 
 while play_again == "yes" or play_again == "y":
 
-    # start game
+    # game; this is the game, the player gets asked question, they answer them and then are given a score
 
     print("THE GAME HAS BEGUN!!!")
     question_1 = input("Question 1:\n"
@@ -94,7 +95,7 @@ while play_again == "yes" or play_again == "y":
                         "D) Karaka\n"
                         "> ").lower()
 
-    # the final result
+    # the final result; the score is checked and they player is given a witty remark on hwo well they did.
 
     print("Final Result.\n")
 
@@ -148,6 +149,8 @@ while play_again == "yes" or play_again == "y":
         print("nice, not entirely useless")
     else:
         print("wow, you can use a serch bar, good one, you almost got away with it too.")
+
+    # play again2; this is the choice to play again or not. if not the game ends, if so it loops.
 
     print("#"*40)
     play_again = input("Do you want to play again?: ").lower()
